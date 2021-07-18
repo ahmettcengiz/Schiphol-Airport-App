@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:id="@+id/rowLayout"
+    >
+    <ImageView
+        android:id="@+id/row_imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/adapter_contanier"
+        android:backgroundTint="#ffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="3dp"/>
+
+    <ImageView
+        android:id="@+id/typeImageView"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/row_imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="3dp"/>
+
+    <TextView
+        android:id="@+id/nameOfFlight"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/typeImageView"
+        app:layout_constraintTop_toTopOf="@+id/row_imageView"
+        android:elevation="3dp"/>
+
+    <TextView
+        android:id="@+id/Destination"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        app:layout_constraintStart_toEndOf="@+id/typeImageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfFlight" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        app:layout_constraintStart_toEndOf="@+id/typeImageView"
+        app:layout_constraintTop_toBottomOf="@+id/Destination" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
