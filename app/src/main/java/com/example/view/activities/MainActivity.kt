@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
                 list = it!!.flights as ArrayList<FlightModel>
                 for (i in list){
-                    Log.e("kaka", i.route.destinations.last())
+                    //Log.e("test", i.route.destinations.last())
 
                 }
 
