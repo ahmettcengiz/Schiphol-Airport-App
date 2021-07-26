@@ -44,10 +44,7 @@ class MainActivity : AppCompatActivity() {
         flightListViewModel.listOfFlight.observe(this, Observer {
 
                 list = it!!.flights as ArrayList<FlightModel>
-                for (i in list){
-                    //Log.e("test", i.route.destinations.last())
-
-                }
+                
 
             setRecylcerViewAdapter()
             initRecycler()
